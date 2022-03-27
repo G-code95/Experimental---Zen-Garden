@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   margin: 0 auto;
   font-family: "Quattrocento Sans", sans-serif;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 body h1, body h2, body h3, body p {
@@ -21,25 +21,11 @@ h2 {
   font-size: 2rem;
 }
 
-h1, header, .summary {
-  color: gray;
-}
-
-/*header, 
-.summary, 
-.preamble, 
-.explanation, 
-.participation, 
-.benefits, 
-.requirements,
-.design-selection, 
-.design-archives,
-.zen-resources {
-    padding: 1rem;
-}*/
 h3 {
   font-size: 2rem;
   color: white;
+  margin: 0;
+  padding-left: 0rem;
 }
 
 p {
@@ -49,6 +35,10 @@ p {
 a:link {
   text-decoration: none;
   color: black;
+}
+
+h1, header, .summary {
+  color: gray;
 }
 
 header h2, .summary p {
@@ -64,31 +54,236 @@ header h2, .summary p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 1.5rem 1rem;
+  margin-top: 2rem;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .preamble p {
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0;
-  padding: 2.5rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.preamble :nth-child(2) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.preamble :last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.explanation {
+  background-color: #fee440;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.explanation p {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 1rem;
+}
+
+.explanation :nth-child(2) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.explanation :last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.participation {
+  background-color: #f15bb5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.participation p {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 1rem;
+}
+
+.participation :nth-child(2) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.participation :last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.benefits {
+  background-color: #00f5d4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.benefits p {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.requirements {
+  background-color: #fee440;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.requirements p {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  padding: 1rem;
+}
+
+.requirements :nth-child(2) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.requirements :last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: #00f5d4;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+footer a {
+  font-size: 1.5;
+  margin: 1rem;
+}
+
+.wrapper {
+  background-color: #f15bb5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: .5rem;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.wrapper h3 {
+  padding-bottom: 0rem;
+}
+
+.zen-resources {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.zen-resources h3 {
+  color: black;
+}
+
+@media only screen and (min-width: 45rem) {
+  h1 {
+    font: size 8rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  body {
+    font-size: 16px;
+  }
+  .preamble, .participation {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+  }
+  .preamble h3, .participation h3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .preamble p, .participation p {
+    border-radius: 10px;
+  }
+  .preamble :nth-child(2), .participation :nth-child(2) {
+    border-radius: 10px;
+  }
+  .preamble :last-child, .participation :last-child {
+    border-radius: 10px;
+  }
+  .benefits {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
+  .explanation, .requirements {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1.5em;
+    -ms-grid-columns: 2fr 1.5fr 1.5fr;
+        grid-template-columns: 2fr 1.5fr 1.5fr;
+  }
 }
 
 @media only screen and (min-width: 64rem) {
   body {
-    width: 70%;
-  }
-  .preamble {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 1.5em;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  .preamble h3 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-column: 1/4;
+    width: 64rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
