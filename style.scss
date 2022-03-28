@@ -33,6 +33,7 @@
 @mixin round-edge-md {
     :nth-child(2) {border-radius: 10px;}
     :last-child {border-radius: 10px;}
+    p {border-radius: 10px;}
 }
 @mixin positioning {
     z-index: 0;
@@ -53,7 +54,7 @@ $color-5: rgb(155, 93, 239); // Purple
 $color-6: rgb(0, 245, 212); // Aqua
 $color-7: rgb(255, 255, 255); // White
 $color-8: rgb(0, 0, 0); // Black
-$p-opacity: rgba($color-7, 0.5);
+$p-opacity: rgba($color-7, 0.40);
 
 //variable - typography
 $primary-font: 'Elsie', 'cursive';
@@ -145,6 +146,7 @@ header h2, .summary p { //Header banner, Summary
     @include class-design;
     p {@include paragraph;}
     @include round-edge;
+    @include positioning;
 }
 
 //participation
@@ -153,6 +155,7 @@ header h2, .summary p { //Header banner, Summary
     @include class-design;
     p {@include paragraph;}
     @include round-edge;
+    @include positioning;
 }
 
 //benefits
@@ -163,6 +166,7 @@ header h2, .summary p { //Header banner, Summary
         @include paragraph; 
         border-radius: 10px;
     }
+    @include positioning;
 }
 
 //requirements
@@ -171,6 +175,7 @@ header h2, .summary p { //Header banner, Summary
     @include class-design;
     p {@include paragraph;} 
     @include round-edge;
+    @include positioning;
 }
 //MAIN//
 
@@ -196,7 +201,7 @@ footer {
 }
 
 .zen-resources {
-    background-color: $color-7;
+    background-color: rgba($color-7, .95);
     border-radius: 10px;
     margin-top: 1.5rem;
     h3 {color: $color-8;}
@@ -219,9 +224,12 @@ footer {
     z-index: -1;
     animation: spin 5s linear infinite;
 }
+
+//candy svg//
+/*
 .preamble h3::after {
     content: "";
-    background: $svg-blue_wrapper_candy center top no-repeat;;
+    background: $svg-blue_wrapper_candy center top no-repeat;
     clear: right;
     display: block;
     width: 500px;
@@ -229,12 +237,14 @@ footer {
     left: 50%; 
     margin-top: -300px;
     padding: -25rem;
-    position: relative;
+    position: absolute;
     //overflow: hidden;
     object-fit: cover;
     
     z-index: 1;
 }
+*/
+
 
 
 
@@ -261,19 +271,18 @@ footer {
 @include md-screen-breakpoint(){
 
     //Font size
+    body {font-size: 16px; }
     h1 {font: size $h1-fontsize-lg;}
     h2 {font-size: $h2-fontsize-lg;}
     h3 {font-size: $h3-fontsize-lg;}
     p {font-size: $p-fontsize-lg;}
-    body {font-size: 16px; }
-
+    
 
     .preamble, .participation {
         display: grid;
         grid-gap: 1em;
         grid-template-columns: 1fr 1fr 1fr;
         h3 {grid-column: 1/4;}
-        p {border-radius: 10px;}
         @include round-edge-md;
         margin-bottom: 4rem;
     }
