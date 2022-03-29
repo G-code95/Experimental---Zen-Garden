@@ -264,24 +264,23 @@ footer a {
           animation: spin 5s linear infinite;
 }
 
-/*
-.preamble h3::after {
-    content: "";
-    background: $svg-blue_wrapper_candy center top no-repeat;
-    clear: right;
-    display: block;
-    width: 500px;
-    height: 500px;
-    left: 50%; 
-    margin-top: -300px;
-    padding: -25rem;
-    position: absolute;
-    //overflow: hidden;
-    object-fit: cover;
-    
-    z-index: 1;
+.explanation h3::after {
+  content: "";
+  background: url(images/blue-candy.svg) center top no-repeat;
+  clear: right;
+  display: block;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 5rem;
+  padding: -25rem;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
 }
-*/
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -292,6 +291,7 @@ footer a {
             transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -356,6 +356,9 @@ footer a {
     grid-gap: 1.5em;
     -ms-grid-columns: 2fr 1.5fr 1.5fr;
         grid-template-columns: 2fr 1.5fr 1.5fr;
+  }
+  .explanation h3::after {
+    margin-left: 10rem;
   }
 }
 

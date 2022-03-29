@@ -226,24 +226,24 @@ footer {
 }
 
 //candy svg//
-/*
-.preamble h3::after {
+
+.explanation h3::after {
     content: "";
-    background: $svg-blue_wrapper_candy center top no-repeat;
+    background: url(images/blue-candy.svg) center top no-repeat;
     clear: right;
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 150px;
+    height: 150px;
     left: 50%; 
-    margin-top: -300px;
+    margin-top: -100px;
+    margin-left: 5rem;
     padding: -25rem;
     position: absolute;
     //overflow: hidden;
     object-fit: cover;
-    
     z-index: 1;
 }
-*/
+
 
 
 
@@ -300,6 +300,11 @@ footer {
         grid-template-columns: 2fr 1.5fr 1.5fr; 
     }
 
+
+    //SVG resize
+    .explanation h3::after {
+        margin-left: 10rem;
+    }
 }
 
 //LARGE SCREEN//
