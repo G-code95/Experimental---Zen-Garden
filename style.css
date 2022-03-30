@@ -62,7 +62,7 @@ header h2, .summary p {
 }
 
 .preamble p {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
@@ -96,7 +96,7 @@ header h2, .summary p {
 }
 
 .explanation p {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
@@ -130,7 +130,7 @@ header h2, .summary p {
 }
 
 .participation p {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
@@ -164,7 +164,7 @@ header h2, .summary p {
 }
 
 .benefits p {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
   border-radius: 10px;
@@ -191,7 +191,7 @@ header h2, .summary p {
 }
 
 .requirements p {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
@@ -267,6 +267,23 @@ footer a {
 .explanation h3::after {
   content: "";
   background: url(images/blue-candy.svg) center top no-repeat;
+  clear: right;
+  display: block;
+  width: 150px;
+  height: 150px;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 5rem;
+  padding: -25rem;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.requirements h3::before {
+  content: "";
+  background: url(images/donut.svg) center top no-repeat;
   clear: right;
   display: block;
   width: 150px;
@@ -359,6 +376,11 @@ footer a {
   }
   .explanation h3::after {
     margin-left: 10rem;
+  }
+  .requirements h3::before {
+    margin-left: 5rem;
+    width: 500px;
+    height: 500px;
   }
 }
 

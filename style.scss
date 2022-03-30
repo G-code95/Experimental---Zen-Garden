@@ -54,7 +54,7 @@ $color-5: rgb(155, 93, 239); // Purple
 $color-6: rgb(0, 245, 212); // Aqua
 $color-7: rgb(255, 255, 255); // White
 $color-8: rgb(0, 0, 0); // Black
-$p-opacity: rgba($color-7, 0.40);
+$p-opacity: rgba($color-7, 0.75);
 
 //variable - typography
 $primary-font: 'Elsie', 'cursive';
@@ -244,6 +244,23 @@ footer {
     z-index: 1;
 }
 
+.requirements h3::before {
+    content: "";
+    background: url(images/donut.svg) center top no-repeat;
+    clear: right;
+    display: block;
+    width: 150px;
+    height: 150px;
+    left: 50%; 
+    margin-top: -100px;
+    margin-left: 5rem;
+    padding: -25rem;
+    position: absolute;
+    //overflow: hidden;
+    object-fit: cover;
+    z-index: 1;
+}
+
 
 
 
@@ -305,6 +322,14 @@ footer {
     .explanation h3::after {
         margin-left: 10rem;
     }
+
+    .requirements h3::before {
+        margin-left: 5rem;
+        width: 500px;
+        height: 500px;
+    }
+
+
 }
 
 //LARGE SCREEN//
