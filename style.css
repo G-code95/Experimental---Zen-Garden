@@ -26,6 +26,7 @@ h3 {
   color: white;
   margin: 0;
   padding-left: 0rem;
+  z-index: 3;
 }
 
 p {
@@ -264,9 +265,8 @@ footer a {
           animation: spin 5s linear infinite;
 }
 
-.explanation h3::after {
+.explanation:after {
   content: "";
-  clear: right;
   background: url(images/purple-candy.svg) center top no-repeat;
   display: block;
   position: absolute;
@@ -276,44 +276,25 @@ footer a {
   width: 100%;
   height: 100px;
   left: 50%;
-  margin-top: -70px;
+  margin-top: -.5rem;
   margin-left: 5rem;
 }
 
-/*
-.explanation h3::after {
-    content: "";
-    background: url(images/purple-candy.svg) center top no-repeat;
-    clear: right;
-    display: block;
-    width: 150px;
-    height: 150px;
-    left: 50%; 
-    margin-top: -110px;
-    margin-left: 1rem;
-    padding: -25rem;
-    position: absolute;
-    object-fit: cover;
-    z-index: 1;
+.requirements:after {
+  content: "";
+  background: url(images/donut.svg) center top no-repeat;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  max-width: 100px;
+  min-width: 80px;
+  width: 100%;
+  height: 100px;
+  left: 50%;
+  margin-top: -1.25rem;
+  margin-left: 5rem;
 }
 
-.requirements h3::before {
-    content: "";
-    background: url(images/donut.svg) center top no-repeat;
-    clear: right;
-    display: block;
-    width: 150px;
-    height: 150px;
-    left: 50%; 
-    margin-top: -100px;
-    margin-left: 5rem;
-    padding: -25rem;
-    position: absolute;
-    //overflow: hidden;
-    object-fit: cover;
-    z-index: 1;
-}
-*/
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -324,6 +305,7 @@ footer a {
             transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -389,14 +371,17 @@ footer a {
     -ms-grid-columns: 2fr 1.5fr 1.5fr;
         grid-template-columns: 2fr 1.5fr 1.5fr;
   }
-  .explanation h3::after {
-    margin-top: -75px;
+  .explanation:after {
+    margin-top: -.15rem;
     margin-left: 11rem;
   }
-  .requirements h3::before {
-    margin-left: 5rem;
-    width: 500px;
-    height: 500px;
+  .requirements:after {
+    max-width: 250px;
+    min-width: 80px;
+    width: 100%;
+    height: 250px;
+    margin-top: -4rem;
+    margin-left: 3rem;
   }
 }
 
