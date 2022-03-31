@@ -229,17 +229,34 @@ footer {
 
 .explanation h3::after {
     content: "";
-    background: url(images/blue-candy.svg) center top no-repeat;
+    clear: right;
+    background: url(images/purple-candy.svg) center top no-repeat;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    max-width: 100px;
+    min-width: 80px;
+    width: 100%;
+    height: 100px;
+    left: 50%; 
+    margin-top: -70px;
+    margin-left: 5rem;
+}
+
+
+/*
+.explanation h3::after {
+    content: "";
+    background: url(images/purple-candy.svg) center top no-repeat;
     clear: right;
     display: block;
     width: 150px;
     height: 150px;
     left: 50%; 
-    margin-top: -100px;
-    margin-left: 5rem;
+    margin-top: -110px;
+    margin-left: 1rem;
     padding: -25rem;
     position: absolute;
-    //overflow: hidden;
     object-fit: cover;
     z-index: 1;
 }
@@ -260,7 +277,7 @@ footer {
     object-fit: cover;
     z-index: 1;
 }
-
+*/
 
 
 
@@ -320,7 +337,8 @@ footer {
 
     //SVG resize
     .explanation h3::after {
-        margin-left: 10rem;
+        margin-top: -75px;
+        margin-left: 11rem;
     }
 
     .requirements h3::before {

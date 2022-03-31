@@ -266,38 +266,54 @@ footer a {
 
 .explanation h3::after {
   content: "";
-  background: url(images/blue-candy.svg) center top no-repeat;
   clear: right;
+  background: url(images/purple-candy.svg) center top no-repeat;
   display: block;
-  width: 150px;
-  height: 150px;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: 5rem;
-  padding: -25rem;
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
   z-index: 1;
+  max-width: 100px;
+  min-width: 80px;
+  width: 100%;
+  height: 100px;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: 5rem;
+}
+
+/*
+.explanation h3::after {
+    content: "";
+    background: url(images/purple-candy.svg) center top no-repeat;
+    clear: right;
+    display: block;
+    width: 150px;
+    height: 150px;
+    left: 50%; 
+    margin-top: -110px;
+    margin-left: 1rem;
+    padding: -25rem;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .requirements h3::before {
-  content: "";
-  background: url(images/donut.svg) center top no-repeat;
-  clear: right;
-  display: block;
-  width: 150px;
-  height: 150px;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: 5rem;
-  padding: -25rem;
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
+    content: "";
+    background: url(images/donut.svg) center top no-repeat;
+    clear: right;
+    display: block;
+    width: 150px;
+    height: 150px;
+    left: 50%; 
+    margin-top: -100px;
+    margin-left: 5rem;
+    padding: -25rem;
+    position: absolute;
+    //overflow: hidden;
+    object-fit: cover;
+    z-index: 1;
 }
-
+*/
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -308,7 +324,6 @@ footer a {
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -375,7 +390,8 @@ footer a {
         grid-template-columns: 2fr 1.5fr 1.5fr;
   }
   .explanation h3::after {
-    margin-left: 10rem;
+    margin-top: -75px;
+    margin-left: 11rem;
   }
   .requirements h3::before {
     margin-left: 5rem;
