@@ -5,7 +5,6 @@ body {
   font-family: "Quattrocento Sans", sans-serif;
   line-height: 1.5;
 }
-
 body h1, body h2, body h3, body p {
   padding: 1rem;
 }
@@ -48,163 +47,120 @@ header h2, .summary p {
 
 .preamble {
   background-color: #f15bb5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1.5rem 1rem;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
   z-index: 0;
 }
-
 .preamble p {
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
-
 .preamble :nth-child(2) {
   border-radius: 10px 10px 0px 0px;
 }
-
 .preamble :last-child {
   border-radius: 0px 0px 10px 10px;
 }
-
 .preamble p {
   z-index: 2;
 }
 
 .explanation {
   background-color: #fee440;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1.5rem 1rem;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
   z-index: 0;
 }
-
 .explanation p {
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
-
 .explanation :nth-child(2) {
   border-radius: 10px 10px 0px 0px;
 }
-
 .explanation :last-child {
   border-radius: 0px 0px 10px 10px;
 }
-
 .explanation p {
   z-index: 2;
 }
 
 .participation {
   background-color: #f15bb5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1.5rem 1rem;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
   z-index: 0;
 }
-
 .participation p {
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
-
 .participation :nth-child(2) {
   border-radius: 10px 10px 0px 0px;
 }
-
 .participation :last-child {
   border-radius: 0px 0px 10px 10px;
 }
-
 .participation p {
   z-index: 2;
 }
 
 .benefits {
   background-color: #00f5d4;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1.5rem 1rem;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
   z-index: 0;
 }
-
 .benefits p {
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
   border-radius: 10px;
 }
-
 .benefits p {
   z-index: 2;
 }
 
 .requirements {
   background-color: #fee440;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 1.5rem 1rem;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
   z-index: 0;
 }
-
 .requirements p {
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0;
   padding: 1rem;
 }
-
 .requirements :nth-child(2) {
   border-radius: 10px 10px 0px 0px;
 }
-
 .requirements :last-child {
   border-radius: 0px 0px 10px 10px;
 }
-
 .requirements p {
   z-index: 2;
 }
@@ -216,27 +172,19 @@ footer {
   padding: 1.5rem;
   border-radius: 10px 10px 0px 0px;
 }
-
 footer a {
-  font-size: 1.5;
+  font-size: 1.5rem;
   margin: 1rem;
 }
 
 .wrapper {
   background-color: #f15bb5;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: .5rem;
+  flex-direction: column;
+  align-content: center;
+  padding: 0.5rem;
   border-radius: 0px 0px 10px 10px;
 }
-
 .wrapper h3 {
   padding-bottom: 0rem;
 }
@@ -246,7 +194,6 @@ footer a {
   border-radius: 10px;
   margin-top: 1.5rem;
 }
-
 .zen-resources h3 {
   color: black;
 }
@@ -258,11 +205,10 @@ footer a {
   width: 800px;
   left: 50%;
   top: 175px;
-  margin-left: -26.70rem;
+  margin-left: -26.7rem;
   position: fixed;
   z-index: -1;
-  -webkit-animation: spin 5s linear infinite;
-          animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 .explanation:after {
@@ -276,7 +222,7 @@ footer a {
   width: 100%;
   height: 100px;
   left: 50%;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
   margin-left: 5rem;
 }
 
@@ -295,55 +241,42 @@ footer a {
   margin-left: 5rem;
 }
 
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 @media only screen and (min-width: 45rem) {
   body {
     font-size: 16px;
   }
+
   h1 {
-    font: size 10em;
+    font-size: 10em;
   }
+
   h2 {
     font-size: 2.7rem;
   }
+
   h3 {
     font-size: 2.6rem;
   }
+
   p {
     font-size: 1.3rem;
   }
+
   .preamble, .participation {
-    display: -ms-grid;
     display: grid;
     grid-gap: 1em;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 4rem;
   }
   .preamble h3, .participation h3 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
   .preamble :nth-child(2), .participation :nth-child(2) {
@@ -355,29 +288,32 @@ footer a {
   .preamble p, .participation p {
     border-radius: 10px;
   }
+
   .benefits {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 4rem;
   }
+
   .explanation, .requirements {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 4rem;
   }
+
   .wrapper {
-    display: -ms-grid;
     display: grid;
     grid-gap: 1.5em;
-    -ms-grid-columns: 2fr 1.5fr 1.5fr;
-        grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
   }
+
   .explanation:after {
     max-width: 150px;
     height: 150px;
     margin-top: -1rem;
     margin-left: 10rem;
   }
+
   .requirements:after {
     max-width: 250px;
     height: 250px;
@@ -385,10 +321,10 @@ footer a {
     margin-left: 3rem;
   }
 }
-
 @media only screen and (min-width: 64rem) {
   body {
     width: 64rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
